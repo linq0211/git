@@ -1,0 +1,33 @@
+git init 可以指定版本库 项目文件夹
+
+清单-告诉git里面有什么内容 
+git add往清单里面放内容
+git status 查看清单内容
+
+提交仓库(git) git commit
+-m "new two files~"
+
+查看版本库内容 git log
+	拓展 --pretty=oneline
+
+版本指定 reset --hard 放入版本 HEAD^/~数字
+
+查看命令历史 git reflog
+
+add之前撤销 git checkout --filename
+add之后撤销 git restore filename
+---
+	git add
+	git checkout
+git restore 取消工作区的修改;撤销暂存区的部分修改;还原某个commit的某个文件的修改
+
+删除文件 rm 文件名
+撤销删除 git reset HEAD 文件名
+删除之后放入版本库 git commit -m ""
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/linq0211/git.git
+git push -u origin main
